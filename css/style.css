@@ -3,21 +3,19 @@
     padding-bottom: 22px;
     color: white;
     margin-bottom: 25px;
+    margin-top: 25px;
     margin-right: 10%;
 }
 
 .car_pad_right{
-    padding-right: 45px;
-    padding-top: 75px;
-    padding-left: 10px;
-    padding-bottom: 25px;
     border-radius: 15px;
-    background: #D4E1F4;
     margin-right: 10%;
+    margin-top: 25px;
 }
 
 #box_border{
     border: 1px solid white;
     padding: 10px 10px 10px 10px;
     border-radius: 15px;
+    margin-right: 12%;
 }
