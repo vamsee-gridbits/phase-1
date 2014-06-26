@@ -2,15 +2,18 @@
     padding-left: 25px;
     padding-bottom: 22px;
     color: white;
+    margin-bottom: 25px;
+    margin-right: 10%;
 }
 
 .car_pad_right{
-    padding-right: 50px;
+    padding-right: 45px;
     padding-top: 75px;
-    padding-left: 15px;
+    padding-left: 10px;
     padding-bottom: 25px;
     border-radius: 15px;
     background: #D4E1F4;
+    margin-right: 10%;
 }
 
 #box_border{
