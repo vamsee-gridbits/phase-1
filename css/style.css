@@ -19,3 +19,14 @@
     border-radius: 15px;
     margin-right: 12%;
 }
+
+#nav.affix {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index:10;
+}
+
+.nav >li{
+    padding: 5px 5px 5px 15px;
+}
