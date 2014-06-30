@@ -1,17 +1,120 @@
-<html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Bootstrap Navbar - Blank Theme</title>
+<link href="assets/assets/css/font-awesome.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="assets/assets/css/bootstrap-combined.no-icons.min.css">
+ <meta charset="utf-8" />
+        <meta name="description" content="Responsive Websites Using BootStrap - demo page">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
         <link href="assets/css/animate.min.css" rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">        
         <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-        <title>Combined Page</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<style>
+    body {
+          background-image: url('assets/img/bcg_paper.png');
+    }
+	#hover-cap-4col .thumbnail,
+	#hover-cap-3col .thumbnail,
+	#hover-cap-unique .thumbnail,
+	#hover-cap-6col .thumbnail {
+		position:relative;
+		overflow:hidden;	
 
+	}
+	.caption {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-image:url('assets/assets/img/caption_bg.jpg');
+		width: 100%;
+		height: 100%;
+		color:#fff !important;
+	}
+	.caption p {
+		padding:6px;
+	}
+	#data
+{
+  font-size:40px;
+}
+#info
+{
+  position:fixed;
+  top:20px;
+  left:20px;
+  background-color:rgba(0,0,0,0.5);
+  color:#fff;
+  padding:20px;
+  z-index:9999;
+}
+
+#image{
+float:center;
+  width:100px;
+  height:100px;
+   background-image:url('assets/img/graphicstatic.svg');
+ }
+</style><!--background: rgba(0,0,0,0.4);-->
+
+<script src="assets/assets/js/jquery-1.9.1.min.js"></script>
+<script src="assets/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+
+
+    $("[rel='tooltip']").tooltip(); 
+    
+    $('#hover-cap-4col .thumbnail').hover(
+        function(){
+            $(this).find('.caption').slideDown(250);
+        },
+        function(){
+            $(this).find('.caption').slideUp(250);
+        }
+    );
+
+    $('#hover-cap-3col .thumbnail').hover(
+        function(){
+            $(this).find('.caption').fadeIn(250);
+        },
+        function(){
+            $(this).find('.caption').fadeOut(250);
+        }
+    );
+    
+    $('#hover-cap-unique .thumbnail').hover(
+        function(){
+            $(this).find('.caption').slideDown(500);
+        },
+        function(){
+            $(this).find('.caption').slideUp(500);
+        }
+    );
+    
+    $('#hover-cap-6col .thumbnail').hover(
+        function(){
+            $(this).find('.caption').show();
+        },
+        function(){
+            $(this).find('.caption').hide();
+        }
+    );  
+    
+});     
+</script>
 </head>
+
 <body onload="height_carousel_mine()">
-          <header class="masthead">
+ <header class="masthead">
         <div id="myCarousel" class="carousel slide" style="background: #5589D5;">
             <div class="carousel-inner">
                 <div class="item active" id="one_slide_carousel" style="min-height:400px">
@@ -475,7 +578,7 @@
                 </div>
                 <div class="item" id="two_slide_carousel" style="min-height:400px">
                     <div class="container">
-                        <div class="row v-center" style="padding-top:40px;padding-left:15px;padding-bottom:62px;margin-left:8%;">
+                        <div class="row v-center" style="padding-top:40px;padding-left:15px;padding-bottom:62px;margin-left:15px;">
                             <div class="col-sm-5 col-xs-offset-1 car_pad_left" id="box_border">
                                 <p>
                                     Unlike rasterized images, SVG files will stay crisp and sharp at any resolution. With high-DPI phones, tablets and monitors, all those rasterized icons are starting to look a bit old and blocky. There are several options to get simpler, decorative pieces to render smoothly and respond to various device widths, shapes and sizes. Symbol fonts are one option; the other is SVG.I’m a big fan of SVG. SVG is an XML format, which means it is possible to write by hand or to script. The most common way to create an SVG file is through the use of various drawing applications like Illustrator, Inkscape or Sketch. All of them open and save the SVG format.
@@ -521,7 +624,7 @@
                 </div>
                 <div class="item" id="three_slide_carousel" style="min-height:400px">
                     <div class="container">
-                        <div class="row v-center" style="padding-top:40px;padding-left:15px;padding-bottom:0px;margin-left:8%;">
+                        <div class="row v-center" style="padding-top:36px;padding-left:15px;padding-bottom:0px;">
                             <div class="col-sm-5 col-xs-offset-1 car_pad_left">
                                 <p>
                                     Have a new idea or trying to improve an existing project!! We can help!
@@ -554,11 +657,9 @@
             <!-- Controls -->
             <a class="left carousel-control" href="#myCarousel" data-slide="prev"> 
                 <span class="glyphicon glyphicon-chevron-left">
-                    <img src="images/left.png" width="26px;" height="25px;"></span>
             </a>
             <a class="right carousel-control" href="#myCarousel" data-slide="next">
                 <span class="glyphicon glyphicon-chevron-right">
-                    <img src="images/right.png" width="25px;" height="25px;"></span>
             </a>  
         </div>
         </header>
@@ -586,118 +687,70 @@
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
-        </div>
-<section id="text1">
- 
-  <div id="scrollBaby"
-    data-top="transform:translateY(0px)"
-    data--875-top="transform:translateY(300px)"
-    data-anchor-target="#text1"
-  ></div> 
-  <div id="tree">
-
-    <div class="item tree1"
-      data-top="opacity: 0;" 
-      data--1600-top="opacity: 0; transform: scale(0.5); bottom: 71px;" 
-      data--2000-top="opacity: 1; transform: scale(0.5); bottom: 90px;" 
-      data--4000-top="opacity: 1; transform: scale(1); bottom: 426px;" 
-      data-anchor-target="#text1"     
-    >
-<div class="container">
-                <div class="content cover text-center">
-                    <div class="row">
-                        <div class="col-lg-4">
-    <p id="data">Static SVG</p><img src="images/graphicstatic.svg">
-    </div>
-      <div class="col-lg-4">
-    <p id="data">Motion SVG</p><img src="images/graphic.svg">
-    </div>
-      <div class="col-lg-4">
-    <p id="data">Reflex SVG</p><img src="images/graphicreflex.svg">
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-
-    <div class="item tree2"
-      data-top="opacity: 0; transform: scale(0.3); bottom: 71px;" 
-      data--2000-top="opacity: 0; transform: scale(0.3); bottom: 71px;" 
-      data--2212-top="opacity: 1; transform: scale(0.45); bottom: 81px;" 
-      data--4000-top="opacity: 1; transform: scale(1); bottom: 309px;" 
-      data-anchor-target="#text1"
-    ></div>  
-    <div class="item tree3"
-      data-top="opacity: 0; transform: scale(0.3);" 
-      data--2212-top="opacity: 0; transform: scale(0.3); bottom: 71px;" 
-      data--2700-top="opacity: 1; transform: scale(0.55); bottom: 81px;" 
-      data--4000-top="opacity: 1; transform: scale(1); bottom: 205px;" 
-      data-anchor-target="#text1"
-    ></div>
-    
-    <div class="item tree4"
-      data-top="opacity: 0; transform: scale(0.3);" 
-      data--3000-top="opacity: 0; transform: scale(0.52);" 
-      data--3300-top="opacity: 1; transform: scale(0.60);" 
-      data--4000-top="opacity: 1; transform: scale(1);" 
-      data-anchor-target="#text1"
-    ></div>
-    
-   
-  
-
-     </div>
-  </div>
-</section>
-
-</body>
-<style>
-#data
-{
-  font-size:40px;
-}
-
-#animation
-{
-margin-top:200px;
-}
-#text1 .bcg {
-  height: 100%;
-  width: 100%;
-  background-image: url('img/bcg_paper.png');
-  background-repeat: repeat;
-  background-position: center top;
-  background-attachment: fixed;
-}
-#scrollBaby {
-  width: 184px;
-  height: 286px;
-  position: fixed;
-  bottom: 0;
-  left: 50%;
-  margin-left: -92px;
-}
-#text1 #tree {
-  width: 380px; height: 550px;
-  position: fixed;
-  top: 50em;
-  left: 10em;
-  margin: -275px 0 0 -190px;
-}
-#text1 .item {position: absolute; top: 0; left: 0;}
-#text1 .tree1 {bottom: 0px; left: 0px; top: auto;}
-#text1 .tree2 {bottom: 309px; left: 73px; top: auto;}
-</style>
-
-
-<center>
-</img>
-</center>
-<script type="text/javascript" src="dist/skrollr.js"></script>
- <script src="js/jquery.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        </div>        
+        <!-- add javascripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
         <script src="js/script.js"></script>
         <script src="js/bootstrap.min.js"></script>
+
+
+     <center>
+            <div class="page-header">
+            <h2 class="well">Mouse Over Thumbnails</h2>
+                <h3 class="well">4 Column Grid - SlideIn/Out</h3>
+            </div>
+            <ul class="thumbnails" id="hover-cap-4col">
+            <div class="span3"></div>
+            <li class="span3">
+              <div class="thumbnail">
+                <div class="caption">
+                    <h4>Caption Title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="icon-eye-open"></i></a> <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="icon-share"></i></a></p>
+                </div>
+                <img src="http://placehold.it/600x400" alt="ALT NAME">
+              </div>
+              <h4>Item Name</h4>
+            </li>
+            <li class="span3">
+              <div class="thumbnail">
+                <div class="caption">
+                    <h4>Caption Title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="icon-eye-open"></i></a> <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="icon-share"></i></a></p>
+                </div>
+                <img src="http://placehold.it/600x400" alt="ALT NAME">
+              </div>
+              <h4>Item Name</h4>
+            </li>
+             <li class="span3">
+              <div class="thumbnail">
+                <div class="caption">
+                    <h4>Caption Title</h4>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+                    <p><a href="#" class="btn btn-inverse" rel="tooltip" title="Preview"><i class="icon-eye-open"></i></a> <a href="#" rel="tooltip" title="Visit Website" class="btn btn-inverse"><i class="icon-share"></i></a></p>
+                </div>
+                <img src="http://placehold.it/600x400" alt="ALT NAME">
+              </div>
+              <h4>Item Name</h4>
+            </li>
+                  
+                                
+      </ul>
+      <div id="image" data--4000-top="transform:rotate(5360deg)" data-bottom="transform:rotate(0deg);transform-origin:center"></div>
+       
+
+<h2 class="well">Scroll Down for SVG Transformation Upto <U>4000</u></h2> </center>
+<div id="info">0&lt;--</div>
+
+
+
+
+
+</body>
+
+</html>
+<script type="text/javascript" src="assets/js/skrollr.js"></script>
 <script type="text/javascript">
 var s = skrollr.init({
   render: function(data){
@@ -706,4 +759,3 @@ var s = skrollr.init({
     }
     });
 </script>
-</html>
