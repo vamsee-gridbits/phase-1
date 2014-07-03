@@ -44,7 +44,7 @@ window.onscroll = function (event) {
     var pic_2 = getPos(pic2) + 450;
     var pic_3 = getPos(pic3) + 700;
     var pic_4 = getPos(pic4) + 950;
-    var pic_5 = getPos(pic5) + 1200;
+    var pic_5 = getPos(pic5) + 1400;
     if (scrollPosition >= pic_1)
         document.getElementById('pic1').className = "img-responsive animated bounceInLeft";    
     if(scrollPosition >= pic_2)
@@ -56,4 +56,12 @@ window.onscroll = function (event) {
     if(scrollPosition >= pic_5)
         document.getElementById('pic5').className = "animated bounceInRight";         
     console.log(scrollPosition )//+ ", " + pic_1 + ", " + pic_2 + ", " + pic_3 + ", " + pic_4);
+}
+
+function fooba(){
+    document.getElementById('bar1').beginElement();
+    document.getElementById('bar2').beginElement();
+    document.getElementById('bar3').beginElement();
+    document.getElementById('bar4').beginElement();
+    document.getElementById('bar5').beginElement();
 }
